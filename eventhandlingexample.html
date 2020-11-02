@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+</head>
+<body>
+    <form method="GET" action="#" name="form1">  <!-- onblur="" also same as onchange-->
+        Name: <input type="text" onchange="checktext(this)" name="name"><br><br> <!--Old way get elementById -->
+        Age: <input type="text" onchange="checknumber(this)" name="age"><br><br> <!--new way by using (this) -->
+        <input type="submit" name="submit" value="Send Data"><br>
+    </form>
+    <script src="event.js"></script>
+</body>
+</html>
